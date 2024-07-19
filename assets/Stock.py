@@ -1,5 +1,6 @@
 import datetime
 from assets.Collector import InfoCollector
+import stTools
 
 
 class Stock:

@@ -27,10 +27,10 @@ def load_sidebar_stocks(port_tab: st.sidebar.tabs, no_investment: int) -> None:
                                           key=f"side_bar_stock_{demo_stock_list.index(stock) + 1}_name")
 
         with share_col:
-            no_shares = random.randrange(10, 100, 10)
+            deal_value = random.randrange(10, 1000000000000, 1)
             tools.create_stock_text_input(state_variable=f"stock_{demo_stock_list.index(stock) + 1}_share",
-                                          default_value=str(no_shares),
-                                          present_text="No. of Shares",
+                                          default_value=str(deal_value),
+                                          present_text="Deal Value (In $)",
                                           key=f"side_bar_stock_{demo_stock_list.index(stock) + 1}_share")
 
         with date_col:
