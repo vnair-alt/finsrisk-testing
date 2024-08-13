@@ -42,11 +42,11 @@ def create_date_input(
                                                      key=key)
 
 
-def get_stock_demo_data(no_stocks: int) -> list:
-    stock_name_list = ['AAPL', 'TSLA', 'GOOG', 'MSFT',
+def get_company_demo_data(no_company: int) -> list:
+    company_name_list = ['AAPL', 'TSLA', 'GOOG', 'MSFT',
                        'AMZN', 'META', 'NVDA', 'PYPL',
                        'NFLX', 'ADBE', 'INTC', 'CSCO', ]
-    return stock_name_list[:no_stocks]
+    return company_name_list[:no_company]
 
 
 def click_button_sim() -> None:

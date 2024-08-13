@@ -13,7 +13,7 @@ def load_sidebar_dropdown_stocks(port_tab: st.sidebar.tabs) -> None:
 
 
 def load_sidebar_stocks(port_tab: st.sidebar.tabs, no_investment: int) -> None:
-    demo_stock_list = tools.get_stock_demo_data(no_investment)
+    demo_stock_list = tools.get_company_demo_data(no_investment)
 
     # split into three columns
     stock_col, share_col, date_col = port_tab.columns(3)
